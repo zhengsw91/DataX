@@ -127,8 +127,9 @@ public class HbaseSQLReaderConfig {
                 cfg.columns = HbaseSQLHelper.getPColumnNames(cfg.connectionString, cfg.tableName);
                 dataxCfg.set(Key.COLUMN, cfg.columns);
             } catch (SQLException e) {
-                throw DataXException.asDataXException(
-                        HbaseSQLReaderErrorCode.GET_PHOENIX_COLUMN_ERROR, "HBase的columns配置不能为空,请添加目标表的列名配置." + e.getMessage(), e);
+                // TODO: 2020/7/17 先跳过 
+                //throw DataXException.asDataXException(
+                 //       HbaseSQLReaderErrorCode.GET_PHOENIX_COLUMN_ERROR, "HBase的columns配置不能为空,请添加目标表的列名配置." + e.getMessage(), e);
             }
         }
     }

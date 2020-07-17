@@ -47,6 +47,7 @@
 
         <!-- reader -->
         <module>mysqlreader</module>
+        <module>mysql8reader</module>
         <module>drdsreader</module>
         <module>sqlserverreader</module>
         <module>postgresqlreader</module>
@@ -100,6 +101,7 @@
         <module>plugin-unstructured-storage-util</module>
         <module>hbase20xsqlreader</module>
         <module>hbase20xsqlwriter</module>
+        <module>mysql8reader</module>
     </modules>
 
     <dependencyManagement>
