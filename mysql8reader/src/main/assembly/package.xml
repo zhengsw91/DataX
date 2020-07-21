@@ -14,7 +14,7 @@
                 <include>plugin.json</include>
                 <include>plugin_job_template.json</include>
             </includes>
-            <outputDirectory>plugin/reader/mysq8lreader</outputDirectory>
+            <outputDirectory>plugin/reader/mysql8reader</outputDirectory>
         </fileSet>
         <fileSet>
             <directory>target/</directory>

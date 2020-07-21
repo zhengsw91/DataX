@@ -40,6 +40,7 @@ public enum DataBaseType {
         String suffix = null;
         switch (this) {
             case MySql:
+            case MySql8:
             case DRDS:
                 suffix = "yearIsDateType=false&zeroDateTimeBehavior=convertToNull&tinyInt1isBit=false&rewriteBatchedStatements=true";
                 if (jdbc.contains("?")) {
@@ -72,6 +73,7 @@ public enum DataBaseType {
         String suffix = null;
         switch (this) {
             case MySql:
+            case MySql8:
                 suffix = "yearIsDateType=false&zeroDateTimeBehavior=convertToNull&rewriteBatchedStatements=true&tinyInt1isBit=false";
                 if (jdbc.contains("?")) {
                     result = jdbc + "&" + suffix;
@@ -111,6 +113,7 @@ public enum DataBaseType {
 
         switch (this) {
             case MySql:
+            case MySql8:
             case Oracle:
                 if (splitPk.length() >= 2 && splitPk.startsWith("`") && splitPk.endsWith("`")) {
                     result = splitPk.substring(1, splitPk.length() - 1).toLowerCase();
@@ -137,6 +140,7 @@ public enum DataBaseType {
 
         switch (this) {
             case MySql:
+            case MySql8:
                 result = "`" + columnName.replace("`", "``") + "`";
                 break;
             case Oracle:
@@ -159,6 +163,7 @@ public enum DataBaseType {
 
         switch (this) {
             case MySql:
+            case MySql8:
                 result = "`" + tableName.replace("`", "``") + "`";
                 break;
             case Oracle:

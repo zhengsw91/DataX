@@ -71,6 +71,7 @@
 
         <!-- writer -->
         <module>mysqlwriter</module>
+        <module>mysql8writer</module>
         <module>drdswriter</module>
         <module>odpswriter</module>
         <module>txtfilewriter</module>
@@ -101,7 +102,6 @@
         <module>plugin-unstructured-storage-util</module>
         <module>hbase20xsqlreader</module>
         <module>hbase20xsqlwriter</module>
-        <module>mysql8reader</module>
     </modules>
 
     <dependencyManagement>
