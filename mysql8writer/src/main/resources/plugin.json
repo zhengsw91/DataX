@@ -1,6 +1,6 @@
 {
-    "name": "mysqlwriter8",
-    "class": "com.alibaba.datax.plugin.writer.mysqlwriter8.MysqlWriter",
+    "name": "mysql8writer",
+    "class": "com.alibaba.datax.plugin.writer.mysql8writer.Mysql8Writer",
     "description": "useScene: prod. mechanism: Jdbc connection using the database, execute insert sql. warn: The more you know about the database, the less problems you encounter.",
     "developer": "alibaba"
 }
